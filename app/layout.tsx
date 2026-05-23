@@ -5,6 +5,7 @@ import ReactQueryProvider from "@/providers/ReactQueryProvider";
 import { cn } from "@/lib/utils";
 import ThemeProvider from "@/providers/ThemeProvider";
 import ReactReduxProvider from "@/providers/ReactReduxProvider";
+import ClerkAuthProvider from "@/providers/ClerkAuthProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -50,7 +51,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
-              {children}
+              <ClerkAuthProvider>{children}</ClerkAuthProvider>
             </ThemeProvider>
           </ReactReduxProvider>
         </ReactQueryProvider>
