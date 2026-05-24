@@ -1,10 +1,12 @@
 import React from "react";
 import { Show, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
+import ModeToggle from "@/components/mode/ModeToggle";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <header className="flex justify-end items-center p-4 gap-4 h-16">
+        <ModeToggle />
         <Show when="signed-out">
           <SignInButton />
           <SignUpButton>

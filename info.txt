@@ -1,0 +1,16 @@
+Task 1:
+- create a .env file and write .env in .gitignore
+- copy all fields from env.example.txt at root, and paste in .env file
+- fill all .env fields
+
+
+Task 2:
+- after written graphql endpoint inside .env file
+- npm run graphql:codegen 
+- it will fetch all Introspection schema from backend and create schema.graphql and graphql file and folder respectively
+
+
+Task 3:
+- create all graphql schema inside schema folder at root
+- before start writing new/update schema, npm run graphql:codegen:watch
+- it will watch, when schema writing and save file, it will create a type of that schema locally
